@@ -30,8 +30,12 @@
     <!-- Hero Section -->
     <header class="hero" id="home">
         <div class="hero-overlay"></div>
-        <!-- Note: Using the generated hero image since we don't have a real video loop yet -->
-        <img src="public/assets/playa_mendoza_hero.png" alt="Playa Mendoza Mar Azul" class="hero-video">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source
+                src="https://raw.githubusercontent.com/Amadeusguitarte/videoo/main/Dron_sobrevolando_mostrando_202602030335_0sy6.mp4"
+                type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
 
         <div class="hero-content">
             <h1>El mar azul que Barranquilla estaba esperando.</h1>
@@ -77,7 +81,6 @@
     <!-- Manifiesto -->
     <section class="manifiesto" style="background: var(--dark); color: white; text-align: center;">
         <div style="max-width: 900px; margin: 0 auto;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">El Manifiesto</h2>
             <p style="font-size: 1.4rem; font-style: italic;">"No vendemos metros cuadrados, vendemos el lienzo para tu
                 obra maestra. Un entorno de baja densidad donde tu diseño dialoga con la naturaleza, no compite con
                 ella."</p>
