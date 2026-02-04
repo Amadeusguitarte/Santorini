@@ -45,6 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // Santorini Cards Interaction (Hover trigger)
+    const cardOptions = document.querySelectorAll('.option');
+
+    cardOptions.forEach(option => {
+        option.addEventListener('mouseenter', () => {
+            cardOptions.forEach(opt => opt.classList.remove('active'));
+            option.classList.add('active');
+        });
+    });
 });
 
 // Change Navbar Background on Scroll
@@ -58,12 +67,4 @@ window.addEventListener('scroll', () => {
         nav.style.boxShadow = 'none';
     }
 });
-// Santorini Cards Interaction (Hover trigger)
-const cardOptions = document.querySelectorAll('.option');
 
-cardOptions.forEach(option => {
-    option.addEventListener('mouseenter', () => {
-        cardOptions.forEach(opt => opt.classList.remove('active'));
-        option.classList.add('active');
-    });
-});
