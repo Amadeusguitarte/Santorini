@@ -700,9 +700,10 @@ section {
 /* Footer Section */
 footer {
     padding: 60px 5% 30px 5%;
-    background: #cbd5e0;
-    /* Gris azulado un poco más oscuro */
-    color: #1e293b;
+    background: #94a3b8;
+    /* Gris azulado un poco más oscuro solicitado */
+    color: #0f172a;
+    /* Slate 900 para contraste sobre fondo más oscuro */
 }
 
 footer p {
