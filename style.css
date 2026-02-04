@@ -71,6 +71,14 @@ nav {
     font-weight: 800;
     color: var(--dark);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 54px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-links {
