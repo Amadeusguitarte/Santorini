@@ -345,10 +345,12 @@ section {
     position: relative;
 }
 
-.lot-card-horizontal .lot-image-horizontal img {
+.lot-card-horizontal .lot-image-horizontal img,
+.standard-lot-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .lot-card-horizontal .lot-info-horizontal {
