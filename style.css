@@ -332,6 +332,8 @@ section {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: 0.4s;
     border: 1px solid #f0f0f0;
+    height: 320px;
+    /* Altura uniforme para todas las tarjetas */
 }
 
 .lot-card-horizontal:hover {
@@ -341,8 +343,9 @@ section {
 
 .lot-card-horizontal .lot-image-horizontal {
     flex: 0 0 40%;
-    min-height: 250px;
+    height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .lot-card-horizontal .lot-image-horizontal img,
@@ -355,10 +358,11 @@ section {
 
 .lot-card-horizontal .lot-info-horizontal {
     flex: 1;
-    padding: 40px;
+    padding: 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
 }
 
 .lot-info-horizontal .lot-tag {
@@ -675,6 +679,18 @@ section {
 }
 
 /* Responsive */
+@media (max-width: 992px) {
+    .lot-card-horizontal {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .lot-card-horizontal .lot-image-horizontal {
+        height: 250px;
+        flex: 0 0 auto;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
