@@ -728,8 +728,8 @@ footer p {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 25px;
-    color: white;
-    /* Títulos en blanco */
+    color: var(--dark);
+    /* Azul original restaurado */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
