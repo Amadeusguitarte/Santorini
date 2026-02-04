@@ -701,13 +701,13 @@ section {
 footer {
     padding: 60px 5% 30px 5%;
     background: #94a3b8;
-    /* Gris azulado un poco más oscuro solicitado */
-    color: #0f172a;
-    /* Slate 900 para contraste sobre fondo más oscuro */
+    /* Gris azulado oscurecido */
+    color: white;
+    /* Texto en blanco solicitado */
 }
 
 footer p {
-    color: #475569;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-container {
@@ -728,7 +728,8 @@ footer p {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 25px;
-    color: var(--dark);
+    color: white;
+    /* Títulos en blanco */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -742,18 +743,19 @@ footer p {
 
 .footer-links-part a {
     text-decoration: none;
-    color: #475569;
+    color: rgba(255, 255, 255, 0.8);
+    /* Enlaces en blanco suave */
     font-weight: 400;
     transition: 0.3s;
 }
 
 .footer-links-part a:hover {
-    color: var(--primary);
+    color: white;
     padding-left: 5px;
 }
 
 .footer-contact-part p {
-    color: #475569;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 15px;
 }
 
@@ -766,24 +768,24 @@ footer p {
 .social-icon {
     width: 40px;
     height: 40px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1e293b;
+    color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .social-icon:hover {
-    background: var(--primary);
-    color: white;
+    background: white;
+    color: #94a3b8;
     transform: translateY(-3px);
 }
 
 .footer-copyright {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
     font-size: 0.85rem;
     text-align: center;
