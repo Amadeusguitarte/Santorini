@@ -325,6 +325,119 @@ section {
     background-color: #128c7e;
 }
 
+/* Info Vignette Section */
+.info-section {
+    padding: 120px 5%;
+    background-color: var(--white);
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.info-text {
+    flex: 1.2;
+}
+
+.info-text .top-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.info-text h2 {
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    line-height: 1.1;
+    margin-bottom: 35px;
+    color: var(--text);
+    font-weight: 400; /* Matching the elegant thin-to-medium weight in ref */
+}
+
+.info-text .link-more {
+    display: inline-block;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 400;
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 2px;
+    transition: 0.3s;
+}
+
+.info-text .link-more:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+}
+
+.info-image {
+    flex: 1;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 0; /* Reference image has sharp/clean edges or subtle radius */
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
+}
+
+.info-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    gap: 60px;
+    border-top: 1px solid #eaeaea;
+    padding-top: 80px;
+}
+
+.info-bottom .col-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-bottom .col-links a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.info-bottom .col-links a:hover {
+    border-bottom-color: var(--text);
+}
+
+.info-bottom .col-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.info-bottom .col-content p {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .info-bottom {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .info-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
