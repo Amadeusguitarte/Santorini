@@ -66,6 +66,10 @@ nav {
     transition: 0.3s;
 }
 
+nav.nav-hidden {
+    transform: translateY(-100%);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 800;

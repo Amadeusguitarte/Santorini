@@ -56,15 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Change Navbar Background on Scroll
+// Change Navbar Background & Hide/Show on Scroll
+let lastScrollTop = 0;
+const nav = document.querySelector('nav');
+
 window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 50) {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Style updates (Padding & Shadow)
+    if (scrollTop > 50) {
         nav.style.padding = '10px 5%';
         nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
     } else {
-        nav.style.padding = '20px 5%';
+        nav.style.padding = '0 5%'; // Restore to original CSS value
         nav.style.boxShadow = 'none';
     }
+
+    // Hide/Show Logic
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling Down
+        nav.classList.add('nav-hidden');
+    } else {
+        // Scrolling Up
+        nav.classList.remove('nav-hidden');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 });
 
