@@ -302,6 +302,110 @@ section {
     margin-top: 15px;
 }
 
+/* Horizontal Lot Cards */
+.featured-lots {
+    padding: 100px 5%;
+    background-color: var(--white);
+}
+
+.lots-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.lot-card-horizontal {
+    display: flex;
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.4s;
+    border: 1px solid #f0f0f0;
+}
+
+.lot-card-horizontal:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.lot-card-horizontal .lot-image-horizontal {
+    flex: 0 0 40%;
+    min-height: 250px;
+    position: relative;
+}
+
+.lot-card-horizontal .lot-image-horizontal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lot-card-horizontal .lot-info-horizontal {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lot-info-horizontal .lot-tag {
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.lot-info-horizontal h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.lot-info-horizontal p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.lot-stats-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+.lot-stats-price .stats {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.lot-stats-price .price {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .lot-card-horizontal {
+        flex-direction: column;
+    }
+
+    .lot-card-horizontal .lot-image-horizontal {
+        flex: 0 0 200px;
+    }
+
+    .lot-info-horizontal {
+        padding: 30px;
+    }
+}
+
 /* WhatsApp Float */
 .whatsapp-float {
     position: fixed;
