@@ -313,10 +313,7 @@ section {
 /* Horizontal Lot Cards */
 .featured-lots {
     padding: 100px 5%;
-    background: #e2e8f0;
-    /* Gris azulado suave */
-    color: #334155;
-    /* Slate oscuro para lectura */
+    background-color: var(--white);
 }
 
 .lots-list {
@@ -698,4 +695,25 @@ section {
     .nav-links {
         display: none;
     }
+}
+
+/* Footer Section */
+footer {
+    padding: 80px 5% 40px 5%;
+    background: #cbd5e0;
+    /* Gris azulado un poco más oscuro */
+    color: #1e293b;
+}
+
+footer p {
+    color: #475569;
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 40px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    text-align: center;
+    opacity: 0.8;
 }
