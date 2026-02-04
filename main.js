@@ -15,7 +15,7 @@ const observer = new IntersectionObserver((entries) => {
 // Initialize animations
 document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.lot-card, .icon-card, .section-title, .water-image, .water-content');
-    
+
     revealElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Smooth Scroll for Navigation
     document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href.startsWith('#')) {
                 e.preventDefault();
@@ -57,4 +57,13 @@ window.addEventListener('scroll', () => {
         nav.style.padding = '20px 5%';
         nav.style.boxShadow = 'none';
     }
+});
+// Santorini Cards Interaction (Hover trigger)
+const cardOptions = document.querySelectorAll('.option');
+
+cardOptions.forEach(option => {
+    option.addEventListener('mouseenter', () => {
+        cardOptions.forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+    });
 });
