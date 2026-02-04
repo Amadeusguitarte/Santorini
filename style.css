@@ -699,7 +699,7 @@ section {
 
 /* Footer Section */
 footer {
-    padding: 80px 5% 40px 5%;
+    padding: 60px 5% 30px 5%;
     background: #cbd5e0;
     /* Gris azulado un poco más oscuro */
     color: #1e293b;
@@ -713,7 +713,7 @@ footer p {
     display: grid;
     grid-template-columns: 2fr 1fr 1.5fr;
     gap: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .footer-logo-part img {
@@ -783,7 +783,7 @@ footer p {
 
 .footer-copyright {
     border-top: 1px solid rgba(0, 0, 0, 0.08);
-    padding-top: 40px;
+    padding-top: 30px;
     font-size: 0.85rem;
     text-align: center;
     opacity: 0.8;
