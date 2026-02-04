@@ -700,10 +700,8 @@ section {
 /* Footer Section */
 footer {
     padding: 60px 5% 30px 5%;
-    background: #475569;
-    /* Gris azulado más oscuro solicitado */
+    background: #03045e;
     color: white;
-    /* Texto en blanco solicitado */
 }
 
 footer p {
@@ -728,8 +726,7 @@ footer p {
     font-size: 1.1rem;
     font-weight: 700;
     margin-bottom: 25px;
-    color: var(--dark);
-    /* Azul original restaurado */
+    color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
