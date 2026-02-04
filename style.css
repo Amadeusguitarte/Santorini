@@ -584,7 +584,7 @@ section {
     color: var(--dark);
     font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important;
 }
 
 .card-container .options {
