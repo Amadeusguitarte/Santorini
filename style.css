@@ -313,7 +313,10 @@ section {
 /* Horizontal Lot Cards */
 .featured-lots {
     padding: 100px 5%;
-    background-color: var(--white);
+    background: #e2e8f0;
+    /* Gris azulado suave */
+    color: #334155;
+    /* Slate oscuro para lectura */
 }
 
 .lots-list {
