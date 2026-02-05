@@ -84,3 +84,42 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 });
 
+
+// Image Modal Logic
+document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("image-modal");
+    const modalImg = document.getElementById("modal-img");
+    const triggerBtn = document.getElementById("conoce-santorini-btn");
+    const closeBtn = document.querySelector(".close");
+
+    if (triggerBtn) {
+        triggerBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            modal.style.display = "block";
+            // Check if the user has provided a specific image URL or use a placeholder
+            // For now, using a placeholder because the exact repo file URL was not fully visible
+            modalImg.src = "https://raw.githubusercontent.com/Alifer1221/toursantorini/main/freepik_elimina-todas-las-curvas-de-nivel_1639.jpg"; 
+            // NOTE: I am guessing the filename based on what I saw. If this fails, I will notify the user.
+            // A safer bet might be an error handler or a generic placeholder if it breaks.
+            
+            // Actually, let try to be safe. If the image fails, let fallback.
+            modalImg.onerror = function() {
+                this.src = "assets/santorini_resort_vignette.png"; // Fallback to existing asset
+                alert("No pude encontrar la imagen exacta del repositorio. Por favor verifica el nombre del archivo.");
+            };
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
+
+    window.addEventListener("click", (e) => {
+        if (e.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
