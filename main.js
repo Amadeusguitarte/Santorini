@@ -96,14 +96,13 @@ document.addEventListener("DOMContentLoaded", () => {
         triggerBtn.addEventListener("click", (e) => {
             e.preventDefault();
             modal.style.display = "block";
-            // Check if the user has provided a specific image URL or use a placeholder
-            // For now, using a placeholder because the exact repo file URL was not fully visible
-            modalImg.src = "https://raw.githubusercontent.com/Alifer1221/toursantorini/main/freepik_elimina-todas-las-curvas-de-nivel_1639.jpg"; 
+            // Corrected URL based on user provided filename
+            modalImg.src = "https://raw.githubusercontent.com/Alifer1221/toursantorini/main/freepik__elimina-todas-las-curvas-de-nivel__16666.png";
             // NOTE: I am guessing the filename based on what I saw. If this fails, I will notify the user.
             // A safer bet might be an error handler or a generic placeholder if it breaks.
-            
+
             // Actually, let try to be safe. If the image fails, let fallback.
-            modalImg.onerror = function() {
+            modalImg.onerror = function () {
                 this.src = "assets/santorini_resort_vignette.png"; // Fallback to existing asset
                 alert("No pude encontrar la imagen exacta del repositorio. Por favor verifica el nombre del archivo.");
             };
